@@ -1,4 +1,15 @@
-<label class="btn btn-default btn-file">
-    Browse <input type="file" style="display: none;" id="userFile">
-    {{ sb.control.files[0].name }}
-</label>
+<section class="content text-center pagination-centered front">
+    <label  ng-hide="showForm" class="btn btnBrowse btn-default btn-file">
+        PICK A FILE <input type="file" style="display: none;" id="userFile" ng-click="showForm=true">
+    </label>
+
+    <form ng-show="showForm">
+        <div class="form-group">
+          <label for="inputPassword">
+            <h2>Please enter a password</h2>
+            <h4>Don't forget it!</h4><h5>you will need it for decrypting your file</h5>
+          </label>
+          <input type="password" class="form-control" id="inputPassword" placeholder="">
+        </div>
+    </form>
+</section>

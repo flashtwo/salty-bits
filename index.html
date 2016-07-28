@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html ng-app="SaltyBits">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Salty Bits - Client side file encryption!</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<!-- <link rel="stylesheet" href="resources/css/main.css"> -->
+		<link rel="stylesheet" href="resources/css/main.css">
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
-		<script src="resources/js/app.js"></script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -16,7 +16,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body ng-controller="SBCtrl as SBCtrl">
+	<body>
 		<header>
 			<div class="hWrap">
 				<h1 id="logo">
@@ -27,16 +27,14 @@
 				</nav>
 			</div>
 		</header>
-		<div ui-view>
-			<!-- <div id="wrapper" >
-
-			</div> -->
-			<section class="content">
+		<div id="wrapper" class="container flip-container" ontouchstart="this.classList.toggle('hover');" ui-view>
+			<section class="content front">
 				<h1>hi im content</h1>
 			</section>
 		</div>
 	</body>
 	<footer></footer>
-	<!-- <script src=""></script> -->
-	<!-- <script src=""></script> -->
+	<!-- <script src="resources/js/cryptojs/rollups/core-min.js"></script> -->
+	<script src="resources/js/cryptojs/rollups/aes.js"></script>
+	<script src="resources/js/app.js"></script>
 </html>
