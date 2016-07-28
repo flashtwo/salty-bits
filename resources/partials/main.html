@@ -1,8 +1,8 @@
-<section class="content text-center pagination-centered front">
-    <label  ng-hide="showForm" class="btn btnBrowse btn-default btn-file">
+<section class="content">
+    <label class="btn btnBrowse btn-default btn-file">
         PICK A FILE <input type="file" style="display: none;" id="userFile" ng-click="showForm=true">
     </label>
-
+    <span ng-show="showForm">check</span>
     <form ng-show="showForm">
         <div class="form-group">
           <label for="inputPassword">
