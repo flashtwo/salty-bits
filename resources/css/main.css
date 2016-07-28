@@ -5,21 +5,21 @@ body {
 	background-color: #4CA5FF;
     /*background-color: #3A3839;*/
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
     height: 100%;
     width: 100%;
     position: absolute;
+
 }
 
 #wrapper, .container {
     font-family: sans-serif;
-    width: 80%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     /*box-shadow: 0px 0px 6px 0 #3a3839;*/
     min-height: 80%;
     min-width: 250px;
     max-width: 900px;
+    max-height: 80%;
     /*border-radius: 2px;*/
                 /*background-color: #FF797C;*/
                 /*background: #07B299;*/
@@ -44,9 +44,17 @@ body {
     min-height: 80%;
     min-width: 250px;
     max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    /*margin: 0 auto;*/
+    padding: 10px;
     background-color: black;
+}
+
+#encryptStyle {
+    background-color: lightgreen;
+}
+
+#decryptStyle {
+    background-color: purple;
 }
 
 #inputPassword {
