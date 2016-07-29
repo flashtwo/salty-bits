@@ -1,15 +1,27 @@
-<section>
+<section class="content">
+    <div class="fancyFontMain">
+        Salty Bits
+    </div>
     <label class="btn btnBrowse btn-default btn-file">
         PICK A FILE <input type="file" style="display: none;" id="userFile" ng-click="showForm=true">
     </label>
-    <span ng-show="showForm">check</span>
+
+    <!-- <span class="check" ng-show="showForm">check</span> -->
+
     <form ng-show="showForm">
         <div class="form-group">
           <label for="inputPassword">
             <h2>Please enter a password</h2>
-            <h4>Don't forget it!</h4><h5>you will need it for decrypting your file</h5>
+            <h4>Don't forget your password!</h4>
+            <h5>You can't recover passwords</h5>
+            <h5>for encrypted files!</h5>
           </label>
           <input type="password" class="form-control" id="inputPassword" placeholder="">
+          <h5>if you're decrypting, enter the password you used to encrypt</h5>
+
+              <button class="btn btn-default btnEncrypt" ng-click="FileCtrl.goForItE()" type="submit">encrypt!</button>
+
+              <button class="btn btn-default btnDecrypt" ng-click="FileCtrl.goForItD()" value="Submit" type="submit">decrypt!</button>
         </div>
     </form>
 </section>
